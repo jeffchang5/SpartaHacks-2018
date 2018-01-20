@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/jeffreychang/SpartaHackApplication/Temp/gradleOut/libs/unity-classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.1"
+        sha1="997bed8c5290bdbae5c8767ba09af501f19e1c08">
+        <dex dex="/Users/jeffreychang/SpartaHackApplication/Temp/gradleOut/build/intermediates/pre-dexed/release/unity-classes_807119f38d8b20a264aefaa9f6cb96f1322e341b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jeffreychang/.android/build-cache/8dc972694cc291abae6ee33c562a58eb98b99ad6/output/jars/libs/tango_java_lib.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.1"
+        sha1="dac29b41332a170a55310a99e3e2f3058e3ac419">
+        <dex dex="/Users/jeffreychang/SpartaHackApplication/Temp/gradleOut/build/intermediates/pre-dexed/release/tango_java_lib_09983d297efde28112d7deea19edb62e8b011415.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jeffreychang/.android/build-cache/8dc972694cc291abae6ee33c562a58eb98b99ad6/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.1"
+        sha1="3b08b853fe85764387602ff10decaf2b449f4ea2">
+        <dex dex="/Users/jeffreychang/SpartaHackApplication/Temp/gradleOut/build/intermediates/pre-dexed/release/classes_36844b31173543d6bb342f452c5e78cddbd42f52.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jeffreychang/.android/build-cache/633ce2e9068f22993dfd58c34ce5d2b6fd15dc1d/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.1"
+        sha1="be35cfb98dbf80214072c4eb41da843fb0d4400d">
+        <dex dex="/Users/jeffreychang/SpartaHackApplication/Temp/gradleOut/build/intermediates/pre-dexed/release/classes_fbe87c813257fd371fbdf36eb14d9958478d844e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/jeffreychang/.android/build-cache/81f4f86f24da8111e1175d3aca31003610162dae/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.1"
+        sha1="86661a14ae16b6d6ef1f52fc8c2a1963e9da348b">
+        <dex dex="/Users/jeffreychang/SpartaHackApplication/Temp/gradleOut/build/intermediates/pre-dexed/release/classes_976541ec5893d1e0c2973282f4915b749050f276.jar" />
+    </item>
+
+</items>
