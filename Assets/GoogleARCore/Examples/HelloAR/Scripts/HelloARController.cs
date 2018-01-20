@@ -24,7 +24,6 @@ namespace GoogleARCore.HelloAR
     using GoogleARCore;
     using UnityEngine;
     using UnityEngine.Rendering;
-
     /// <summary>
     /// Controls the HelloAR example.
     /// </summary>
@@ -67,6 +66,7 @@ namespace GoogleARCore.HelloAR
         /// </summary>
         private bool m_IsQuitting = false;
 
+        public Texture2D playButtonTexture;
         /// <summary>
         /// The Unity Update() method.
         /// </summary>
@@ -106,7 +106,7 @@ namespace GoogleARCore.HelloAR
             bool showSearchingUI = true;
             for (int i = 0; i < m_AllPlanes.Count; i++)
             {
-                if (m_AllPlanes[i].TrackingState == TrackingState.Tracking)
+                if (m_AllPlanes[i].TrackingState == TrackingState.Tracking) //When the phone is done tracking
                 {
                     showSearchingUI = false;
                     break;
@@ -128,19 +128,20 @@ namespace GoogleARCore.HelloAR
 
             if (Session.Raycast(touch.position.x, touch.position.y, raycastFilter, out hit))
             {
-                var andyObject = Instantiate(AndyAndroidPrefab, hit.Pose.position, hit.Pose.rotation);
-
+                var programCube = GameObject.CreatePrimitive(PrimitiveType.Cube);
+                programCube.transform.SetPositionAndRotation(hit.Pose.position, hit.Pose.rotation);
+                //programCube.GetComponent<Renderer>().material.color = new Color(18f/255f,229f/255f,42f/255f);
+                programCube.GetComponent<Renderer>().material.mainTexture = playButtonTexture;
+                programCube.transform.localScale = new Vector3(0.05f, 0.05f, 0.05f);
                 // Create an anchor to allow ARCore to track the hitpoint as understanding of the physical
                 // world evolves.
                 var anchor = hit.Trackable.CreateAnchor(hit.Pose);
 
                 // Andy should look at the camera but still be flush with the plane.
-                andyObject.transform.LookAt(FirstPersonCamera.transform);
-                andyObject.transform.rotation = Quaternion.Euler(0.0f,
-                    andyObject.transform.rotation.eulerAngles.y, andyObject.transform.rotation.z);
-
+                programCube.transform.position += new Vector3(0,programCube.GetComponent<Renderer>().bounds.size.y / 2, 0);
+                programCube.transform.rotation = new Quaternion(0, 0, 0, 0) ;
                 // Make Andy model a child of the anchor.
-                andyObject.transform.parent = anchor.transform;
+                programCube.transform.parent = anchor.transform;
             }
         }
 
