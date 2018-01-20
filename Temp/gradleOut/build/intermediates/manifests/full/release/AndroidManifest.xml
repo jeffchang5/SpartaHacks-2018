@@ -55,11 +55,14 @@
         </activity>
 
         <meta-data
+            android:name="unity.tango-enable"
+            android:value="True" />
+        <meta-data
             android:name="unityplayer.SkipPermissionsDialog"
             android:value="true" />
         <meta-data
             android:name="unity.build-id"
-            android:value="693893cc-7bc5-49c0-9bc7-20c20cd7cd35" />
+            android:value="4c920a12-b8c1-4ccf-97e8-41b9d63b755c" />
         <meta-data
             android:name="unity.splash-mode"
             android:value="0" />
@@ -69,9 +72,6 @@
         <meta-data
             android:name="android.max_aspect"
             android:value="2.1" />
-        <meta-data
-            android:name="unity.tango-enable"
-            android:value="True" />
         <meta-data
             android:name="com.google.ar.version.major"
             android:value="0" />

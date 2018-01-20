@@ -9,7 +9,7 @@
                     "startOffset": 55,
                     "endLine": 3,
                     "endColumn": 8,
-                    "endOffset": 158
+                    "endOffset": 154
                 },
                 "from": {
                     "file": "/Users/jeffreychang/SpartaHackApplication/Temp/gradleOut/src/main/res/values-v21/styles.xml",
@@ -19,7 +19,7 @@
                         "startOffset": 53,
                         "endLine": 3,
                         "endColumn": 8,
-                        "endOffset": 157
+                        "endOffset": 153
                     }
                 }
             }

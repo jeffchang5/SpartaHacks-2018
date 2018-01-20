@@ -31,8 +31,14 @@ android {
 	buildToolsVersion '27.0.1'
 
 	defaultConfig {
+		minSdkVersion	24
 		targetSdkVersion 25
 		applicationId 'io.jeffchang.SpartaHacks'
+		ndk {
+			abiFilters 'armeabi-v7a', 'x86'
+		}
+		versionCode	1
+		versionName	'1.0'
 	}
 
 	lintOptions {
@@ -58,5 +64,11 @@ android {
   			signingConfig signingConfigs.debug
   		}
 	}
+    packagingOptions {
+        doNotStrip "*/armeabi-v7a/*.so"
+        doNotStrip "*/x86/*.so"
+    }
 
 }
+
+
